@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborative Document Editor</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Collaborative Document Editor</h1>
+    <input type="text" id="title" placeholder="Document Title" />
+    <textarea id="documentContent" placeholder="Start typing here..."></textarea>
+    <button id="saveBtn">Save Document</button>
+  </div>
+
+  <script src="/js/socket.io.js"></script>
+
+  <script>
+    const documentId = "<%= documentId %>";
+  </script>
+  <script src="/js/document.js"></script>
+</body>
+</html>
